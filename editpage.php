@@ -112,7 +112,7 @@
          <div class="form-group row">
           <div class="col text-right">
            <button id="leave_reset_button" class="mb-2 btn btn-danger">Cancel</button>
-           <button id="leave_submit_button" class="mb-2 btn btn-primary">Save</button>
+           <button id="leave_submit_button" class="mb-2 btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Save</button>
           </div>
          </div>
         </div>
@@ -121,6 +121,21 @@
     </main>
    </div>
   </div>
+</div>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container popup">
+      <h1>Confirm Update</h1>
+      <p>Are you sure you want to update your account?</p>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-primary">Yes</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Cancel</button>
+      </div>
+    </div>
+  </form>
 </div>
 
 
@@ -135,6 +150,14 @@ $(document).ready(function () {
                 $('#sidebar').toggleClass('active');
             });
         });
+
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 </script>
 
