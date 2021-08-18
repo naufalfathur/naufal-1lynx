@@ -27,39 +27,39 @@
           <label class="col-lg-3 col-12 col-form-label">Profile Photo</label>
           <div class="col my-auto">
            <div class="custom-file">
-            <input id="leave_files_input" type="file" accept="image/*,.pdf" class="custom-file-input" multiple>
-            <label for="leave_files_input" class="custom-file-label">Choose file...</label>
+            <input id="files_input" type="file" accept="image/*,.pdf" class="custom-file-input" multiple>
+            <label for="files_input" class="custom-file-label">Choose file...</label>
            </div>
           </div>
          </div>
          <div class="form-group row">
-          <div id="leave_filesdisplay" class="col">
+          <div id="filesdisplay" class="col">
           </div>
          </div>
          <div class="form-group row">
           <label class="col-lg-3 col-12 col-form-label">Name</label>
           <div class="col my-auto">
-           <input name="leave_reference" type="text" class="form-control" value="" >
+           <input name="reference" type="text" class="form-control" value="" >
           </div>
          </div>
          <div class="form-group row">
           <label class="col-lg-3 col-12 col-form-label">Email</label>
           <div class="col my-auto">
-           <input name="leave_reference" type="text" class="form-control" value="" >
+           <input name="reference" type="text" class="form-control" value="" >
           </div>
          </div>
          <div class="form-group row">
           <label class="col-lg-3 col-12 col-form-label">Mobile Number</label>
           <div class="col my-auto">
-           <input name="leave_reference" type="text" class="form-control" value="" >
+           <input name="reference" type="text" class="form-control" value="" >
           </div>
          </div>
          <div class="form-group row">
-          <label class="col-lg-3 col-12 col-form-label" for="leave_type_input">Occupation</label>
+          <label class="col-lg-3 col-12 col-form-label" for="type_input">Occupation</label>
           <div class="col my-auto">
            <div class="row">
             <div class="col-12">
-             <select class="form-control custom-select" id="leave_type_input" name="leave_type">
+             <select class="form-control custom-select" id="type_input" name="type">
               <option value="paid">Government Agencies</option>
               <option value="unpaid">Academicians</option>
               <option value="sick">Companies</option>
@@ -111,8 +111,8 @@
         </div>
          <div class="form-group row">
           <div class="col text-right">
-           <button id="leave_reset_button" class="mb-2 btn btn-danger">Cancel</button>
-           <button id="leave_submit_button" class="mb-2 btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Save</button>
+           <button id="reset_button" class="mb-2 btn btn-danger">Cancel</button>
+           <button id="submit_button" class="mb-2 btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Save</button>
           </div>
          </div>
         </div>
