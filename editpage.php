@@ -16,13 +16,13 @@
 <div id="content">
   <div class="container-fluid">
    <div class="row">
-    <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <main class="col-lg-10 px-md-4">
      <div class="container-fluid">
        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2 font-weight-bold">Edit Profile Page</h1>
        </div>
        <div class="row">
-        <div class="col-lg-7 col-sm col-12">
+        <div class="col-sm col-12">
         <div class="form-group row">
           <label class="col-lg-3 col-12 col-form-label">Profile Photo</label>
           <div class="col my-auto">

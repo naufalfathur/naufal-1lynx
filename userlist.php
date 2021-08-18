@@ -18,13 +18,13 @@
 <div id="content">
   <div class="container-fluid">
    <div class="row">
-    <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <main class="col-lg-10 px-md-4">
      <div class="container-fluid">
        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2 font-weight-bold">Users Page List</h1>
        </div>
        <div class="row">
-       <div id="user_table"></div>
+        <div id="user_table"></div>
        </div>
      </div>
     </main>
@@ -69,15 +69,16 @@ function myFunction(xhttp) {
         autoColumns:false, 
         tooltips:true,           
         addRowPos:"top",         
-        history:true,           
+        history:true,         
         pagination:"local",     
-        paginationSize:7,         
+        paginationSize:50,         
         movableColumns:true,      
         resizableRows:true,
         initialSort:[             //set the initial sort order of the data
-            {column:"name", dir:"asc"},
+            {column:"id", dir:"asc"},
         ],
         columns:[    
+            {title:"ID", field:"id"},
             {title:"Name", field:"name"},
             {title:"Username", field:"username"},
             {title:"Email", field:"email"},

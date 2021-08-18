@@ -20,8 +20,28 @@ a:focus{
 }
 
 #sidebar.active {
-    margin-left: -300px;
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
 }
+
+#sidebar.active span{
+    display: none;
+}
+
+#sidebar.active h1{
+    display: none;
+}
+
+#sidebar.active h3{
+    display: none;
+}
+
+#sidebar.active svg{
+	margin-left: -10px;
+}
+
+
 .wrapper{
 	display: flex;
 	text-decoration: none;
@@ -115,16 +135,33 @@ ul ul a{
 }
 
 
-@media (max-width: 1600px) {
-    #sidebar {
-        margin-left: -300px;
+@media (max-width: 900px) {
+	#sidebar svg{
+		margin-left: -10px;
+	}
+	#sidebarCollapse {
+        display: none;
     }
-    #sidebar.active {
-        margin-left: 0;
-    }
+
     #sidebarCollapse span {
         display: none;
     }
+	#sidebar {
+		min-width: 80px;
+		max-width: 80px;
+		text-align: center;
+	}
+	#sidebar span{
+		display: none;
+	}
+	
+	#sidebar h1{
+		display: none;
+	}
+	
+	#sidebar h3{
+		display: none;
+	}
 }
 
 .switch {
@@ -186,10 +223,6 @@ ul ul a{
   .slider.round:before {
 	border-radius: 50%;
   }
-
-
-
-
 
 
   .cancelbtn, .deletebtn {
@@ -274,4 +307,29 @@ ul ul a{
 
 .popup {
     padding: 60px;
+}
+
+.tabulator-col-title {
+    color: white;
+}
+
+.tabulator-col-content {
+    background-color: #25242B;
+}
+
+.tabulator .tabulator-footer{
+	columns: white;
+	background-color: #25242B;
+}
+
+button.tabulator-page {
+    color: white;
+}
+
+.tabulator-row .tabulator-cell {
+	border-right :none;
+}
+
+.tabulator-row .tabulator-cell {
+	padding: 10px;
 }
